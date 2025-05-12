@@ -1,0 +1,21 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix RDMT: <https://w3id.org/>.
+
+RDMT:
+    a skos:ConceptScheme;
+    dct:description "RDMT_Vocab"@en;
+    dct:title "RDMT_Collection"@en;
+    vann:preferredNamespaceUri RDMT:;
+    skos:hasTopConcept RDMT:016f1 .
+RDMT:016f1
+    a skos:Concept;
+    skos:narrower RDMT:16ca7;
+    skos:prefLabel "RDMT_Training_Formats"@en, "RDMT_Trainings_Formate"@de;
+    skos:topConceptOf RDMT: .
+RDMT:16ca7
+    a skos:Concept;
+    skos:broader RDMT:016f1;
+    skos:inScheme RDMT:;
+    skos:prefLabel "RDMT_Lehrmaterialien"@de, "RDMT_Teaching_Materials"@en.
